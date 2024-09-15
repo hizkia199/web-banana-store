@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fas fa-lemon"></i>
+            Banana Store
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#products"><i class="fas fa-apple-alt"></i> Products</a></li>
+            <li><a href="#promotions"><i class='fas fa-tag'></i>Promotions</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <!-- Cart Icon and Dropdown -->
+        <div class="navbar-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#" class="cart-icon" id="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+
+
+        <div class="clock" id="clock"></div>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="hero-content">
+            <h1>Discover Freshness at Banana Store</h1>
+            <p id="animated-text"></p>
+            <div class="cta-buttons">
+                <a href="#products" class="cta-button"><i class="fas fa-shopping-cart"></i> Start Shopping</a>
+                <a href="#contact" class="secondary-button"><i class="fas fa-arrow-right"></i> Explore Our Range</a>
+            </div>
+        </div>
+    </section>
+
+    <section id='reviews' class='reviews'>
+        <div class="reviews-container">
+            <h2>Customer Reviews</h2>
+
+            <div class="review-card">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="img/johan doe.png" alt="John Doe">
+                    </div>
+                    <div class="profile-details">
+                        <h3>John Doe</h3>
+                        <p>Verified Buyer</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <div class="review-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"The bananas here are always fresh and the service is excellent! I love the eco-friendly
+                        packaging
+                        too."</p>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="img/jane smith.png" alt="Jane Smith">
+                    </div>
+                    <div class="profile-details">
+                        <h3>Jane Smith</h3>
+                        <p>Verified Buyer</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <div class="review-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Fast delivery and great customer support. The banana smoothies are my favorite!"</p>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Reviewer 1 -->
+            <div class="review-card">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="img/emma.png" alt="Sarah Lee">
+                    </div>
+                    <div class="profile-details">
+                        <h3>Emma Browm</h3>
+                        <p>Verified Buyer</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <div class="review-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Absolutely love the variety of products! The banana bread is to die for!"</p>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Reviewer 2 -->
+            <div class="review-card">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="img/alex williams.png" alt="Michael Johnson">
+                    </div>
+                    <div class="profile-details">
+                        <h3>Alex Williams</h3>
+                        <p>Verified Buyer</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <div class="review-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"The customer service was fantastic. I had an issue with my order and they solved it right away!"
+                    </p>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Reviewer 3 -->
+            <div class="review-card">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="img/mary johnson.png" alt="Julia Roberts">
+                    </div>
+                    <div class="profile-details">
+                        <h3>Mary Johnson</h3>
+                        <p>Verified Buyer</p>
+                    </div>
+                </div>
+                <div class="review-content">
+                    <div class="review-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"I've been a loyal customer for months, and the quality never disappoints. Highly recommend!"</p>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="promotions" class="promotions">
+        <div class="promotion-content">
+            <h2>Special Promotions</h2>
+            <p>Don’t miss out on our latest deals and discounts! Check out our exclusive promotions below.</p>
+            <div class="promotion-grid">
+                <div class="promotion-card">
+                    <div class="promotion-image">
+                        <img src="img/promo gratis.jpg" alt="Promotion 1">
+                    </div>
+                    <div class="promotion-details">
+                        <h3>Summer Sale</h3>
+                        <p>Up to 50% off on selected items! Limited time only.</p>
+                        <a href="#" class="promotion-button"><i class="fas fa-shopping-cart"></i> Shop Now</a>
+                    </div>
+                </div>
+                <div class="promotion-card">
+                    <div class="promotion-image">
+                        <img src="img/promo 50.jpg" alt="Promotion 2">
+                    </div>
+                    <div class="promotion-details">
+                        <h3>Buy One Get One Free</h3>
+                        <p>Buy one item and get another one for free. Don’t miss out!</p>
+                        <a href="#" class="promotion-button"><i class="fas fa-gift"></i> Grab the Deal</a>
+                    </div>
+                </div>
+                <div class="promotion-card2">
+                    <div class="promotion-image">
+                        <img src="img/promo 20.jpg" alt="Exclusive Discount">
+                    </div>
+                    <div class="promotion-details">
+                        <h3>Exclusive Members Discount</h3>
+                        <p>Join our membership program and enjoy an additional 20% off on all products. Plus, get early
+                            access to our
+                            latest collections and special promotions!</p>
+                        <ul class="promotion-features">
+                            <li><i class="fas fa-star"></i> Extra 20% Off</li>
+                            <li><i class="fas fa-calendar-day"></i> Early Access to New Collections</li>
+                            <li><i class="fas fa-gift"></i> Special Promotions & Offers</li>
+                        </ul>
+                        <a href="#" class="promotion-button"><i class="fas fa-user-plus"></i> Join Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="products" class="products">
+        <h2>Our Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="img/banana fresh.jpg" alt="Fresh Bananas">
+                <div class="product-details">
+                    <h3>Fresh Bananas</h3>
+                    <p>High-quality organic bananas, perfect for your daily nutrition.</p>
+                    <a href="#" class="buy-button" data-target="modal-1"><i class="fas fa-shopping-cart"></i> Buy
+                        Now</a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="img/banana leaves.jpg" alt="Banana Leaves">
+                <div class="product-details">
+                    <h3>Banana Leaves</h3>
+                    <p>Perfect for cooking or serving traditional dishes.</p>
+                    <a href="#" class="buy-button" data-target="modal-2"><i class="fas fa-shopping-cart"></i> Buy
+                        Now</a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="img/banana smoothies.jpg" alt="Banana Smoothies">
+                <div class="product-details">
+                    <h3>Banana Smoothies</h3>
+                    <p>Delicious smoothies made from fresh bananas.</p>
+                    <a href="#" class="buy-button" data-target="modal-3"><i class="fas fa-shopping-cart"></i> Buy
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal for Fresh Bananas -->
+    <div class="modal" id="modal-1">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/banana fresh.jpg" alt="Fresh Bananas">
+                </div>
+                <div class="modal-details">
+                    <h3>Fresh Bananas</h3>
+                    <p class="product-source">Source: Organic Farm, Ecuador</p>
+                    <p class="product-price">Price: $2.99 per kg</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decrease-quantity-1">-</button>
+                        <input type="number" id="quantity-1" name="quantity" min="1" max="10" value="1" readonly>
+                        <button class="quantity-btn" id="increase-quantity-1">+</button>
+                    </div>
+                    <p class="total-price">Total: $<span id="total-price-1">2.99</span></p>
+                    <button class="checkout-button">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal for Banana Leaves (Modal 2) -->
+    <div class="modal" id="modal-2">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/banana leaves.jpg" alt="Banana Leaves">
+                </div>
+                <div class="modal-details">
+                    <h3>Banana Leaves</h3>
+                    <p class="product-source">Source: Tropical Rainforest, Thailand</p>
+                    <p class="product-price">Price: $1.50 per leaf</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decrease-quantity-2">-</button>
+                        <input type="number" id="quantity-2" name="quantity" min="1" max="10" value="1" readonly>
+                        <button class="quantity-btn" id="increase-quantity-2">+</button>
+                    </div>
+                    <p class="total-price">Total: $<span id="total-price-2">1.50</span></p>
+                    <button class="checkout-button">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal for Banana Smoothies (Modal 3) -->
+    <div class="modal" id="modal-3">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="img/banana smoothies.jpg" alt="Banana Smoothies">
+                </div>
+                <div class="modal-details">
+                    <h3>Banana Smoothies</h3>
+                    <p class="product-source">Source: Freshly Blended, Locally Made</p>
+                    <p class="product-price">Price: $4.99 per bottle</p>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decrease-quantity-3">-</button>
+                        <input type="number" id="quantity-3" name="quantity" min="1" max="10" value="1" readonly>
+                        <button class="quantity-btn" id="increase-quantity-3">+</button>
+                    </div>
+                    <p class="total-price">Total: $<span id="total-price-3">4.99</span></p>
+                    <button class="checkout-button">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="about" class="about">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="img/store.jpg" alt="About Banana Store">
+            </div>
+            <div class="about-content">
+                <h2>About Banana Store</h2>
+                <p>
+                    At Banana Store, we deliver only the finest bananas, sourced from local organic farms directly to
+                    your
+                    home. Our passion is ensuring you enjoy the freshest produce while supporting sustainable farming.
+                </p>
+                <p>
+                    Our diverse range includes not only fresh bananas but also unique banana-based products like banana
+                    bread and smoothies. Join us in embracing a healthier lifestyle with our eco-friendly products!
+                </p>
+                <div class="about-highlight">
+                    <h3>Our Core Values</h3>
+                    <ul class="values-list">
+                        <li><i class="fas fa-leaf"></i> Sustainability</li>
+                        <li><i class="fas fa-hand-holding-heart"></i> Organic Products</li>
+                        <li><i class="fas fa-truck"></i> Fast Delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the Banana Store membership program?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our membership program offers exclusive discounts, early access to new collections, and
+                            special
+                            promotions. You can join by clicking the 'Join Now' button on our promotions page.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I track my order?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once your order is shipped, you'll receive a tracking number via email. You can use this
+                            number
+                            to track your order on our website or the carrier's website.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your return policy?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day return policy for most items. For detailed information on returns and
+                            exchanges, please visit our Shipping & Returns page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="blog-container">
+            <div class="profile-section">
+                <div class="profile-image2">
+                    <img src="img/Hizkia.png" alt="Hizkia Siahaan">
+                </div>
+            </div>
+            <div class="blog-content">
+                <h2>From Our Blog</h2>
+                <div class="blog-articles">
+                    <article class="blog-article">
+                        <img src="img/banana smoothies.jpg" alt="Banana Smoothie Recipe">
+                        <div class="article-details">
+                            <h3>Delicious Banana Smoothie Recipe</h3>
+                            <p>Discover a refreshing and nutritious banana smoothie recipe that’s perfect for any time
+                                of
+                                day. Easy to make and packed with flavor!</p>
+                            <a href="#" class="read-more">
+                                <i class="fas fa-chevron-right"></i> Read More
+                            </a>
+                        </div>
+                    </article>
+                    <article class="blog-article">
+                        <img src="img/nutrions.jpeg" alt="Nutrition Tips">
+                        <div class="article-details">
+                            <h3>Top Nutrition Tips for a Healthy Lifestyle</h3>
+                            <p>Learn about the health benefits of bananas and how they can be incorporated into a
+                                balanced
+                                diet to support your well-being.</p>
+                            <a href="#" class="read-more">
+                                <i class="fas fa-chevron-right"></i> Read More
+                            </a>
+                        </div>
+                    </article>
+                    <article class="blog-article">
+                        <img src="img/eco-friendly-living.jpeg" alt="Eco-Friendly Living">
+                        <div class="article-details">
+                            <h3>How to Live an Eco-Friendly Lifestyle</h3>
+                            <p>Explore tips and strategies for reducing your environmental footprint, with a focus on
+                                sustainable practices and eco-friendly products.</p>
+                            <a href="#" class="read-more">
+                                <i class="fas fa-chevron-right"></i> Read More
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="careers" class="careers">
+        <div class="careers-container">
+            <h2>Join Our Team</h2>
+            <p>At Banana Store, we’re passionate about fresh produce, sustainability, and providing the best service to
+                our
+                customers. Join our dynamic and growing team today!</p>
+
+            <!-- Job Openings Grid -->
+            <div class="careers-grid">
+                <div class="career-card">
+                    <div class="career-image">
+                        <img src="img/teamwokr.webp" alt="Teamwork">
+                    </div>
+                    <div class="career-details">
+                        <h3>Sales Associate</h3>
+                        <p>Help customers find the perfect product and provide exceptional service.</p>
+                        <ul class="career-features">
+                            <li><i class="fas fa-map-marker-alt"></i> Location: New York, USA</li>
+                            <li><i class="fas fa-clock"></i> Full Time</li>
+                        </ul>
+                        <a href="#" class="apply-button"><i class="fas fa-paper-plane"></i> Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-image">
+                        <img src="img/customer service.webp" alt="Customer Service">
+                    </div>
+                    <div class="career-details">
+                        <h3>Customer Support Specialist</h3>
+                        <p>Join our support team and assist customers with their queries and concerns.</p>
+                        <ul class="career-features">
+                            <li><i class="fas fa-map-marker-alt"></i> Location: Remote</li>
+                            <li><i class="fas fa-clock"></i> Part Time</li>
+                        </ul>
+                        <a href="#" class="apply-button"><i class="fas fa-paper-plane"></i> Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-image">
+                        <img src="img/logistics.webp" alt="Logistics">
+                    </div>
+                    <div class="career-details">
+                        <h3>Logistics Coordinator</h3>
+                        <p>Ensure smooth operation of our supply chain and timely delivery of products.</p>
+                        <ul class="career-features">
+                            <li><i class="fas fa-map-marker-alt"></i> Location: San Francisco, USA</li>
+                            <li><i class="fas fa-clock"></i> Full Time</li>
+                        </ul>
+                        <a href="#" class="apply-button"><i class="fas fa-paper-plane"></i> Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Map Section -->
+            <div class="map-section">
+                <h3>Find Our Offices</h3>
+                <p>Our offices are located across multiple cities worldwide. Visit us or join one of our remote teams!
+                </p>
+                <div id="map" class="interactive-map">
+                    <!-- Embed or integrate an interactive map (e.g., Google Maps iframe or API) -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537363156165!3d-37.816279742682116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5776e0c9f443b0!2sBanana%20Store%20HQ!5e0!3m2!1sen!2sus!4v1639276575832!5m2!1sen!2sus"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="benefits-section">
+                <h3>Why Work With Us?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon-container">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Supportive Environment</h4>
+                        <p>Join a friendly and collaborative team that values each member’s contribution.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon-container">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4>Competitive Salary</h4>
+                        <p>We offer competitive compensation packages and room for growth.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon-container">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Sustainability</h4>
+                        <p>Work for a company that prioritizes sustainability and eco-friendly practices.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon-container">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Career Growth</h4>
+                        <p>Opportunities for professional development and career advancement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-grid">
+            <div class="contact-image">
+                <img src="img/banana market.jpg" alt="Contact Banana">
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get updates on fresh bananas, exclusive deals, and more!</p>
+                <form action="#" method="post" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-button">
+                        <i class="fas fa-paper-plane"></i> Subscribe
+                    </button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="#careers"><i class="fas fa-briefcase"></i> Careers</a></li>
+                        <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="#products"><i class="fas fa-truck"></i> Shipping & Returns</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Banana Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+
+</html>
